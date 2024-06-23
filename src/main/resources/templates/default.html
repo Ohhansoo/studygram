@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/head :: headFragment"></div>
+</head>
+
+<body class="index-page">
+<div th:replace="fragments/header :: headerFragment"></div>
+<p>메인</p>
+
+<div th:insert="fragments/footer :: footerFragment"></div>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<div th:replace="fragments/javascript :: javaScriptFragment"/>
+</body>
+
+</html>
